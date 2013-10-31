@@ -1,0 +1,15 @@
+.htaccess
+wp-*.php
+readme-ja.html
+readme.html
+index.php
+xmlrpc.php
+wp-admin/
+wp-content/cache/
+wp-content/languages/
+wp-content/uploads/
+wp-content/upgrade/
+wp-includes/
+sitemap.xml
+*.log
+
