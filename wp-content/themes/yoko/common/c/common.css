@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/*10pix → 77% 11pix → 85% 12pix → 93% 13pix → 100% 14pix → 108%px 15pix → 116% 16pix → 123.1%*/
+
+/* TAG							##################################### */
+html{
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+b, strong{
+	font-weight: bold;
+}
+
+blockquote{
+	margin: 1em 2.5em;
+}
+
+dfn{
+	font-style: italic;
+}
+
+/* 固定幅フォント */
+pre, code, kbd, samp{
+	font-family: monospace, monospace;
+	_font-family: 'courier new', monospace;
+	font-size: 1em;
+}
+pre{
+	white-space: pre; 
+	white-space: pre-wrap; 
+	word-wrap: break-word;
+}
+
+small {
+	font-size: 85%;
+}
+
+/* subscript&superscript */
+sub, sup{
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup{
+	top: -0.5em;
+}
+sub{
+	bottom: -0.25em;
+}
+
+td{
+	vertical-align: top;
+}
+
+/* HEADER						##################################### */
+/* header */
+header{
+	overflow: hidden;
+}
+	/* main-navi */
+	nav#main-navi{
+		overflow: hidden;
+		width: 100%;
+		background: red;
+	}
+		nav#main-navi li{
+			float: left;
+		}
+			nav#main-navi li a{
+				display: block;
+			}
+
+/* LAYOUT						##################################### */
+div#container{
+	overflow: hidden;
+}
+
+
+/* MAIN							##################################### */
+
+/* content */
+div#content{
+	overflow: hidden;
+}
+
+/* main */
+#main{
+	float: left;
+	width: 80%;
+	overflow: hidden;
+}
+
+aside{
+	float: left;
+	width: 20%;
+	overflow: hidden;
+	background: red;
+}
+
+/* FOOTER						##################################### */
+/* footer */
+div#footer{
+}
