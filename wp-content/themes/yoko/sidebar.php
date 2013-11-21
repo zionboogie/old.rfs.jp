@@ -11,7 +11,7 @@
 <a id="menu-smapho"></a>
 <aside id="categories-4" class="widget widget_categories">
 	<h3 class="widget-title">category</h3>
-	<?php wp_list_categories('include=238,231,232,189,177,4,198,199,182,48,147,77,178,179,180,181,193,190&title_li=&hide_empty=0&orderby=count&order=asc') ?>
+	<?php wp_list_categories('include=238,231,232,189,177,4,198,199,182,48,147,77,178,179,180,181,193,190,240&title_li=&hide_empty=0&orderby=count&order=asc') ?>
 </aside>
 
 <div style="margin-bottom:40px">
