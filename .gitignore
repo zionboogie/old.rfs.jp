@@ -2,7 +2,7 @@
 wp-*.php
 readme-ja.html
 readme.html
-index.php
+/index.php
 xmlrpc.php
 wp-admin/
 wp-content/cache/
