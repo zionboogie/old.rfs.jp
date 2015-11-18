@@ -527,7 +527,7 @@ article.post h6 a[name]:hover{
 		letter-spacing: 0.1em;
 		background: url("common/i/wrap/h2_bg.gif") no-repeat left center;
 	}
-	article.post h3{
+	article.post h4{
 		padding: 3px 0 3px 15px;
 		border-left: 3px solid #000;
 		border-bottom: 1px solid #ccc;
@@ -546,7 +546,6 @@ article.post h6 a[name]:hover{
 		letter-spacing: 0.1em;
 		font-size: 116%;
 	}
-
 
 
 /* more-link */
@@ -1014,6 +1013,7 @@ article.post table{
 		background: url(common/i/wrap/bg_shell.gif) repeat-y;
 		color: #fff;
 		overflow: hidden;
+		line-height: 1.5;
 	}
 		.box-shell span {
 			padding-left: 17px;
@@ -1070,6 +1070,19 @@ ul.ul-site{
 	font-style: normal;
 }
 
+div.post-list{
+	 border-top: 1px dotted #ccc;
+}
+div.post-list h3{
+	margin: 10px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+	color: #ccc;
+}
+	div.post-list h3 a{
+/*		font-size: 167%;*/
+		line-height: 2;
+	}
 
 /* ICON							##################################### */
 

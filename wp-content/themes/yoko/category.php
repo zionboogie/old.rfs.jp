@@ -3,7 +3,6 @@
  * @package WordPress
  * @subpackage Yoko
  */
-
 get_header(); ?>
 
 <!-- category.php -->
@@ -12,11 +11,9 @@ get_header(); ?>
 <div id="wrap">
 <!-- #main -->
 <div id="main">
-
 	<!-- / #content -->
 	<div id="content">
 		<section id="article-list">
-
 			<!-- #topic-path -->
 			<div id="topic-path">
 				<a href="<?php bloginfo('url'); ?>" class="ic-home">HOME</a>
@@ -29,7 +26,10 @@ get_header(); ?>
 				<?php $categorydesc = category_description(); if ( ! empty( $categorydesc ) ) echo apply_filters( 'archive_meta', '<div class="archive-meta">' . $categorydesc . '</div>' ); ?>
 			</header>
 
+
 <?php 
+
+// カテゴリーの詳細データを取得
 $cat_info	= get_category( $cat );
 $categories	= get_categories(array(
 	'parent'	=> $cat_info->cat_ID,
@@ -37,12 +37,13 @@ $categories	= get_categories(array(
 	'order'		=> 'asc'
 ));
 
+global $pg_navi; 
+
 if( !$categories ){
 
-	/* pg-navi */
-	global $wp_rewrite;
+	// ページナビゲーションの作成
 	$paginate_base = get_pagenum_link(1);
-	if ( strpos($paginate_base, '?') || ! $wp_rewrite->using_permalinks() ) {
+	if ( strpos($paginate_base, '?') ) {
 		$paginate_format	= '';
 		$paginate_base		= add_query_arg('paged', '%#%');
 	} else {
@@ -59,14 +60,21 @@ if( !$categories ){
 	)); 
 	echo '<div class="page-navi">' . "\n" . $pg_navi . "</div>\n";
 
-
+	// 記事一覧の出力
+	echo ('<div class="post-list">');
 	while ( have_posts() ){
 		the_post();
-		get_template_part( 'content', get_post_format() );
+		echo( '<h3><a href="' );
+		the_permalink();
+		echo( '">' );
+		the_title();
+		echo( '</a> ');
+		the_time("Y年m月j日");
+		echo( "</h3>\n");
 	}
+	echo ('</div>');
 
 } else {
-
 	/* 記事リスト */
 	foreach( $categories as $category ){
 		echo '<ul class="li-category"><li><h3>', $category->name, '</h3><ul class="li-post">';
@@ -89,7 +97,6 @@ if( !$categories ){
 <!-- .page-navi -->
 <div class="page-navi">
 <?php
-global $pg_navi; 
 echo $pg_navi;
 ?>
 </div>

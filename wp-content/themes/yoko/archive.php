@@ -3,8 +3,9 @@
  * @package WordPress
  * @subpackage Yoko
  */
-
 get_header(); ?>
+
+<!-- archive.php -->
 
 <div id="wrap">
 <div id="main">

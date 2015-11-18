@@ -2,9 +2,11 @@
 /**
  * @package WordPress
  * @subpackage Yoko
+author.php
  */
-
 get_header(); ?>
+
+<!-- author.php -->
 
 <div id="wrap">
 <div id="main">
