@@ -29,12 +29,9 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
 
 /* GOOGLE FONTS IMPORT			##################################### */
+/*
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
-
-/*
-@import url(http://fonts.googleapis.com/css?family=Crimson+Text&v2);
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold|Droid+Serif:regular,italic,bold,bolditalic&subset=latin);
 */
 
 
@@ -47,11 +44,9 @@ html{
 }
 
 body{
-/*	
-	font-family: Verdana, Arial, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', sans-serif;
-	*/
-	font-family: /*Georgia*/ Verdana,'ヒラギノ 角ゴ Pro W3','Hiragino Kaku Gothic Pro',meiryo,Osaka,'ＭＳ Ｐゴシック',sans-serif;
-	font-size: 13px/1.231;
+	/*font-family: Verdana,'ヒラギノ 角ゴ Pro W3','Hiragino Kaku Gothic Pro',meiryo,Osaka,'ＭＳ Ｐゴシック',sans-serif;*/
+	font-family: "Helvetica Neue", Helvetica, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	font-size: 13px/1.5;
 	color: #434343;
 	background: url("common/i/header/bg.gif") left top repeat-x #fff;
 }
@@ -113,7 +108,7 @@ sub{
 	bottom: -0.25em;
 }
 code{
-	font-family: Verdana, Arial, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', sans-serif;
+	/*font-family: Verdana, Arial, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', sans-serif;*/
 }
 
 a{
@@ -141,7 +136,7 @@ div#wrap{
 	margin: 0 auto;
 	padding: 30px 20px;
 	overflow: hidden;
-	font-size: 85%;
+/*	font-size: 85%;*/
 }
 
 	/* content */
@@ -471,10 +466,10 @@ article.post h3,
 article.post h4,
 article.post h5,
 article.post h6{
-	margin: 20px 0;
-	font-family: 'Open Sans Condensed','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', sans-serif;
-	color: #707070;
+	margin: 2em 0 1em 0;
+	/*font-family: 'Open Sans Condensed','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', sans-serif;*/
 	letter-spacing: 0.05em;
+	font-weight: normal;
 }
 article.post h1 a,
 article.post h2 a,
@@ -507,10 +502,11 @@ article.post h6 a[name]:hover{
 	/* entry-title */
 	article.post h1.entry-title{
 		margin-bottom: 20px;
-		padding-bottom: 20px;
+		padding: 20px 0 20px 10px;
 		font-size: 167%;
 		color: #707070;
 		background: url("common/i/header/link_underline.gif") repeat-x left bottom;
+		border-left: 3px solid #999;
 	}
 		article.post h1.entry-title a{
 			display: block;
@@ -521,22 +517,20 @@ article.post h6 a[name]:hover{
 		/*
 		border-bottom: 3px solid #707070;
 		*/
-		padding: 3px 0 3px 15px;
-		border: 1px solid #cccccc;
-		font-size: 153.9%;
+		padding: 3px 0;
+		background: url("common/i/header/link_underline.gif") repeat-x left bottom;
+		font-size: 138.5%;
 		letter-spacing: 0.1em;
-		background: url("common/i/wrap/h2_bg.gif") no-repeat left center;
 	}
 	article.post h4{
-		padding: 3px 0 3px 15px;
-		border-left: 3px solid #000;
+		padding: 3px 0;
 		border-bottom: 1px solid #ccc;
-		font-size: 138.5%;
+		font-size: 116%;
 		letter-spacing: 0.1em;
 	}
 	article.post h4{
 		border-bottom: 1px dotted #000;
-		font-size: 138.5%;
+		font-size: 116%;
 		letter-spacing: 0.1em;
 	}
 	article.post h5,
@@ -544,7 +538,6 @@ article.post h6 a[name]:hover{
 		padding-left: 10px;
 		border-left: 3px solid #ccc;
 		letter-spacing: 0.1em;
-		font-size: 116%;
 	}
 
 
@@ -702,7 +695,7 @@ header.page-header{
 		padding: 23px 0 0 55px;
 		height: 43px;
 		background: url("common/i/wrap/h_list.gif") repeat-x left top;
-		font-family: 'Open Sans Condensed','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', sans-serif;
+		/*font-family: 'Open Sans Condensed','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', sans-serif;*/
 		font-size: 174%;
 		color: #000;
 	}
@@ -727,7 +720,7 @@ ul.li-category{
 		height: 30px;
 		padding: 18px 0 0 0;
 		background: url("common/i/wrap/h3_list.gif") repeat-x left top;
-		font-family: 'Open Sans Condensed','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', sans-serif;
+		/*font-family: 'Open Sans Condensed','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', sans-serif;*/
 		font-size: 131%;
 	}
 
@@ -1165,18 +1158,18 @@ div.archive-meta{
 /* syntaxhighlighter			##################################### */
 
 /* syntaxhighlighter */
+/*
 .syntaxhighlighter,
 .syntaxhighlighter div,
 .syntaxhighlighter code,
 .syntaxhighlighter span{
 	line-height: 2 !important;
 }
-
 .syntaxhighlighter{
 	margin: 20px auto !important;
 	width: 99% !important;
 }
-
+*/
 .syntaxhighlighter .line .content .block{
 	background-image: url("") !important;	/* 改行画像の削除 */
 	text-indent: 0 !important;
