@@ -522,6 +522,10 @@ article.post h6 a[name]:hover{
 		font-size: 138.5%;
 		letter-spacing: 0.1em;
 	}
+	article.post h3{
+		font-size: 138.5%;
+		letter-spacing: 0.1em;
+	}
 	article.post h4{
 		padding: 3px 0;
 		border-bottom: 1px solid #ccc;
@@ -1154,6 +1158,9 @@ div.archive-meta{
 	line-height: 1.8;
 }
 
+	#entry li{
+		margin-bottom: 1em;
+	}
 
 /* syntaxhighlighter			##################################### */
 
